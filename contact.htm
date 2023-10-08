@@ -1,27 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us - Metromate</title>
     <!-- Include Tailwind CSS CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-<body class="bg-gray-100">
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-500 text-white py-2">
+      <div class="container mx-auto flex justify-center">
+        <a href="about.htm" class="mx-4 hover:underline">About Us</a>
+        <a href="contact.htm" class="mx-4 hover:underline">Contact Us</a>
+      </div>
+    </nav>
+
+    <!-- Header Section -->
     <header class="bg-blue-500 py-4 text-white text-center">
-        <h1 class="text-3xl font-semibold">Metromate</h1>
-        <p class="mt-2">Your Metro Route Finder</p>
+      <h1 class="text-3xl font-semibold">Metromate</h1>
+      <p class="mt-2">Your Metro Route Finder</p>
     </header>
 
-    <main class="container mx-auto p-4">
-        <section class="bg-white shadow-md rounded-lg p-4">
-            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
-            <p>Contact us at contact@metromate.com for any inquiries or feedback.</p>
-        </section>
-    </main>
+    <!-- Contact Form Section -->
+    <section class="container p-4 mt-8 sm:w-[70%] w-[100%]">
+      <section class="bg-white shadow-md rounded-lg p-4">
+        <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+        <p>Contact us at techfusion@gmail.com for any inquiries or feedback.</p>
+        <p>+91 62025 49978</p>
+        <p>+91 70888 39967</p>
+      </section>
+    </section>
 
-    <footer class="bg-gray-800 text-white text-center py-4">
-        <p>&copy; 2023 Metromate. All rights reserved.</p>
+    <!-- Locations Section -->
+    <section class="container mx-auto p-4 mt-8">
+      <section class="bg-white shadow-md rounded-lg p-4">
+        <h2 class="text-2xl font-semibold mb-4">Locations</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <!-- Location 1 -->
+          <div class="bg-blue-200 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold">Headquarters</h3>
+            <p>C6-219 Bennett University</p>
+            <!-- You can add a map here if needed -->
+          </div>
+          <!-- Location 2 -->
+          <div class="bg-blue-200 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold">Branch Office</h3>
+            <p>Tech Zone 2 , Greater Noida</p>
+            <!-- You can add a map here if needed -->
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Team Section -->
+    <section class="container mx-auto p-4 mt-8">
+      <section class="bg-white shadow-md rounded-lg p-4">
+        <h2 class="text-2xl font-semibold mb-4">Our Team</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <!-- Team Member 1 -->
+          <div class="bg-blue-200 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold">Satyam Raj</h3>
+            <p>Founder & CEO</p>
+            <p>Email: satyam.raj@metromate.com</p>
+          </div>
+          <!-- Team Member 2 -->
+          <div class="bg-blue-200 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold">Akshay Negi</h3>
+            <p>CTO & Chief Developer</p>
+            <p>Email: negi.akshay@metromate.com</p>
+          </div>
+          <!-- Team Member 3 -->
+          <div class="bg-blue-200 p-4 rounded-lg">
+            <h3 class="text-lg font-semibold">Aditi Chaturvedi</h3>
+            <p>UX/UI Designer</p>
+            <p>Email: aditi.chaturvedi@metromate.com</p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mx-auto p-4 mt-8">
+      <section class="bg-white shadow-md rounded-lg p-4">
+        <h2 class="text-2xl font-semibold mb-4">Frequently Asked Questions</h2>
+        <!-- FAQ 1 -->
+        <details class="mb-4">
+          <summary class="text-lg font-semibold cursor-pointer">
+            How can I contact customer support?
+          </summary>
+          <p>
+            Contact our customer support team at support@metromate.com for
+            assistance.
+          </p>
+        </details>
+        <!-- FAQ 2 -->
+        <details class="mb-4">
+          <summary class="text-lg font-semibold cursor-pointer">
+            What are your office hours?
+          </summary>
+          <p>Our office hours are Monday to Friday, 9:00 AM - 5:00 PM.</p>
+        </details>
+        <!-- FAQ 3 -->
+        <details class="mb-4">
+          <summary class="text-lg font-semibold cursor-pointer">
+            Do you have a physical office I can visit?
+          </summary>
+          <p>
+            Yes, we have offices in multiple locations. Please refer to the
+            Locations section for details.
+          </p>
+        </details>
+        <!-- FAQ 4 -->
+        <details class="mb-4">
+          <summary class="text-lg font-semibold cursor-pointer">
+            How long does it take to get a response to my inquiry?
+          </summary>
+          <p>We aim to respond to inquiries within 24 hours.</p>
+        </details>
+        <!-- FAQ 5 -->
+        <details class="mb-4">
+          <summary class="text-lg font-semibold cursor-pointer">
+            Is there a dedicated support phone number?
+          </summary>
+          <p>Yes, you can reach our support team at +1-123-456-7890.</p>
+        </details>
+      </section>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="container p-4 mt-8 sm:w-[60%]">
+      <section class="bg-white shadow-md rounded-lg p-4">
+        <h2 class="text-2xl font-semibold mb-4">Report an Issue</h2>
+        <form action="#" method="post">
+          <div class="mb-4">
+            <label for="name" class="block text-lg font-semibold">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="email" class="block text-lg font-semibold">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              required
+            />
+          </div>
+          <div class="mb-4">
+            <label for="message" class="block text-lg font-semibold"
+              >Message</label
+            >
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              class="w-full p-2 border border-gray-300 rounded-lg"
+              required
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600"
+          >
+            Submit
+          </button>
+        </form>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-4 mt-8">
+      <p>&copy; 2023 Metromate. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>

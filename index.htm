@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metromate</title>
     <!-- Include Tailwind CSS CDN -->
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
-    />
+    /> -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="bg-gray-100">
     <header class="bg-blue-500 py-4 text-white text-center">
@@ -120,6 +121,120 @@
         </div>
       </section>
 
+      <!-- Our Services Section -->
+      <section class="mt-8">
+        <h2 class="text-2xl font-semibold mb-4">Our Services</h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+        >
+          <!-- Component for Blue Line -->
+          <div
+            class="bg-blue-200 p-4 rounded-lg text-center border border-blue-500"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-2 bg-blue-500 rounded-full text-white flex items-center justify-center text-lg font-semibold"
+            >
+              Blue
+            </div>
+            <p class="text-gray-700">
+              Connects Dwarka to Noida Electronic City.
+            </p>
+          </div>
+
+          <!-- Component for Red Line -->
+          <div
+            class="bg-red-200 p-4 rounded-lg text-center border border-red-500"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-2 bg-red-500 rounded-full text-white flex items-center justify-center text-lg font-semibold"
+            >
+              Red
+            </div>
+            <p class="text-gray-700">Connects Rithala to Shaheed Sthal.</p>
+          </div>
+
+          <!-- Component for Yellow Line -->
+          <div
+            class="bg-yellow-200 p-4 rounded-lg text-center border border-yellow-500"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-2 bg-yellow-500 rounded-full text-white flex items-center justify-center text-lg font-semibold"
+            >
+              Yellow
+            </div>
+            <p class="text-gray-700">
+              Connects Samaypur Badli to HUDA City Centre.
+            </p>
+          </div>
+
+          <!-- Component for Green Line -->
+          <div
+            class="bg-green-200 p-4 rounded-lg text-center border border-green-500"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-2 bg-green-500 rounded-full text-white flex items-center justify-center text-lg font-semibold"
+            >
+              Green
+            </div>
+            <p class="text-gray-700">
+              Connects Inderlok/Kirti Nagar to Brigadier Hoshiar Singh.
+            </p>
+          </div>
+
+          <!-- Component for Violet Line -->
+          <div
+            class="bg-violet-200 p-4 rounded-lg text-center border border-violet-500"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-2 bg-violet-500 rounded-full text-white flex items-center justify-center text-lg font-semibold"
+            >
+              Violet
+            </div>
+            <p class="text-gray-700">
+              Connects Kashmere Gate to Escorts Mujesar.
+            </p>
+          </div>
+
+          <!-- Component for Magenta Line -->
+          <div
+            class="bg-[#334155] p-4 rounded-lg text-center border border-magenta-500"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-2 bg-[#94a3b8] rounded-full text-white flex items-center justify-center text-lg font-semibold"
+            >
+              Mage
+            </div>
+            <p class="text-white">
+              Connects Botanical Garden to Janakpuri West.
+            </p>
+          </div>
+
+          <!-- Component for Pink Line -->
+          <div
+            class="bg-pink-200 p-4 rounded-lg text-center border border-pink-500"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-2 bg-pink-500 rounded-full text-white flex items-center justify-center text-lg font-semibold"
+            >
+              Pink
+            </div>
+            <p class="text-gray-700">Connects Majlis Park to Shiv Vihar.</p>
+          </div>
+
+          <!-- Component for Orange Line -->
+          <div
+            class="bg-orange-700 p-4 rounded-lg text-center border border-orange-950"
+          >
+            <div
+              class="w-16 h-16 mx-auto mb-2 rounded-full text-white flex items-center justify-center text-black text-lg font-semibold"
+            >
+              Orange
+            </div>
+            <p class="text-white">Connects New Delhi to Dwarka Sector 21.</p>
+          </div>
+        </div>
+      </section>
+
       <!-- User Reviews Section -->
       <!-- User Reviews Section -->
       <section class="mt-8">
@@ -187,9 +302,117 @@
         </div>
       </section>
     </main>
+    <!-- FAQ Section -->
+    <!-- FAQ Section -->
+    <section class="sm:px-4 px-2 my-8">
+      <h2 class="text-2xl font-semibold mb-4">FAQ</h2>
+      <div class="grid grid-cols-1 gap-4">
+        <!-- Question 1 -->
+        <div class="bg-blue-200 p-4 rounded-lg">
+          <h3
+            class="text-lg font-semibold cursor-pointer"
+            onclick="toggleAnswer('answer1')"
+          >
+            How do I use Metromate to find a metro route?
+          </h3>
+          <div class="text-gray-700 hidden mt-2" id="answer1">
+            Metromate makes it easy to find a metro route. Simply enter your
+            starting point and destination in the provided form, and click "Find
+            Route." We'll display the best route for you.
+          </div>
+        </div>
+        <!-- Question 2 -->
+        <div class="bg-blue-200 p-4 rounded-lg">
+          <h3
+            class="text-lg font-semibold cursor-pointer"
+            onclick="toggleAnswer('answer2')"
+          >
+            Is Metromate available on mobile devices?
+          </h3>
+          <div class="text-gray-700 hidden mt-2" id="answer2">
+            Yes, Metromate is accessible on all devices, including mobile phones
+            and tablets. You can use it on the go to plan your metro routes.
+          </div>
+        </div>
+        <!-- Question 3 -->
+        <div class="bg-blue-200 p-4 rounded-lg">
+          <h3
+            class="text-lg font-semibold cursor-pointer"
+            onclick="toggleAnswer('answer3')"
+          >
+            How accurate are the route calculations?
+          </h3>
+          <div class="text-gray-700 hidden mt-2" id="answer3">
+            Metromate provides highly accurate metro route calculations. Our C++
+            backend ensures precision and reliability in finding the best routes
+            for you.
+          </div>
+        </div>
+        <!-- Question 4 -->
+        <div class="bg-blue-200 p-4 rounded-lg">
+          <h3
+            class="text-lg font-semibold cursor-pointer"
+            onclick="toggleAnswer('answer4')"
+          >
+            Do I need to create an account to use Metromate?
+          </h3>
+          <div class="text-gray-700 hidden mt-2" id="answer4">
+            No, you can use Metromate without creating an account. It's a
+            hassle-free experience that doesn't require any sign-up.
+          </div>
+        </div>
+        <!-- Question 5 -->
+        <div class="bg-blue-200 p-4 rounded-lg">
+          <h3
+            class="text-lg font-semibold cursor-pointer"
+            onclick="toggleAnswer('answer5')"
+          >
+            Are there any additional features for premium users?
+          </h3>
+          <div class="text-gray-700 hidden mt-2" id="answer5">
+            Yes, premium users enjoy priority access to real-time updates,
+            ad-free experience, and the ability to save their favorite routes
+            for quick access.
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="bg-gray-800 text-white text-center py-4">
       <p>&copy; 2023 Metromate. All rights reserved.</p>
     </footer>
+    <!-- JavaScript to handle FAQ interactions -->
+    <script>
+      // Function to toggle the visibility of answer divs
+      function toggleAnswer(questionId) {
+        const answerElement = document.getElementById(questionId);
+        if (answerElement.style.display === "block") {
+          answerElement.style.display = "none";
+        } else {
+          answerElement.style.display = "block";
+        }
+      }
+
+      // Add click event listeners to questions
+      document.getElementById("answer1").addEventListener("click", function () {
+        toggleAnswer("answer1");
+      });
+
+      document.getElementById("answer2").addEventListener("click", function () {
+        toggleAnswer("answer2");
+      });
+
+      document.getElementById("answer3").addEventListener("click", function () {
+        toggleAnswer("answer3");
+      });
+
+      document.getElementById("answer4").addEventListener("click", function () {
+        toggleAnswer("answer4");
+      });
+
+      document.getElementById("answer5").addEventListener("click", function () {
+        toggleAnswer("answer5");
+      });
+    </script>
   </body>
 </html>
