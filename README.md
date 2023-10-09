@@ -18,15 +18,17 @@ MetroMate is designed to simplify metro travel by providing users with route sug
 
 The MetroMate project is organized as follows:
 
-- `/css`: Contains the Cascading Style Sheets (CSS) files used for styling the website.
+- `/css`: Contains the Cascading Style Sheets (CSS) files used for styling the website. We have used Tailwind CSS for faster development.
 
-- `/js`: Includes JavaScript files for adding interactivity to the website.
+- `/js`: Includes JavaScript for adding interactivity to the website.
 
 - `/images`: Houses all images, including the MetroMate logo and station photos.
 
 - `index.html`: The main HTML file that serves as the entry point to the website.
 
 - `about.html`, `contact.html`, and other HTML files: Additional pages of the website.
+
+- `c++`: For the backend, we will use C++.
 
 ## Getting Started
 
